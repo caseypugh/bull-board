@@ -13,7 +13,6 @@ export function createBullBoard({
 }) {
   const { bullBoardQueues, setQueues, replaceQueues, addQueue, removeQueue } = getQueuesApi(queues);
   const uiBasePath = "node_modules/@bull-board/ui"
-  console.log("SUP IM DIFFERENT NOW ", uiBasePath)
   serverAdapter
     .setQueues(bullBoardQueues)
     .setViewsPath(uiBasePath + '/dist')
